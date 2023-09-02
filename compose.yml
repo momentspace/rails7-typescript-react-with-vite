@@ -1,0 +1,24 @@
+version: "3.9"
+services:
+  db:
+    image: mysql:8.0.27
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql
+      MYSQL_DATABASE: db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    restart: always
+      
+  app:
+    build:
+      context: .
+      args:
+        - UID=${UID}
+        - GID=${GID}
+    command: top
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
+    depends_on:
+      - db

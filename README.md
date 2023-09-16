@@ -9,3 +9,12 @@
 - azureadと認証連携する（SAML?token?）
   - 多分controller通るならapiでもSAML認証でいいはず
   - azureadの設定が必要（コールバック先登録）
+
+- SAML認証実装
+  - devise
+  - devise_saml-authenticatable
+- 認可実装
+  - pundit
+- idp providor
+  - azure ad
+  - ruby_idp

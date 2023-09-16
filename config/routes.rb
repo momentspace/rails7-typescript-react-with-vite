@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  get "home/index", to: "home#index"
+  root :to => 'dashboard#index'
+  get 'dashboard', to: "dashboard#index"
+  get 'dashboard/new', to: "dashboard#new"
+  get "home", to: "home#index"
+  devise_for :users
 end

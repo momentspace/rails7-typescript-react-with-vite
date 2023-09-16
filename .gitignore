@@ -43,3 +43,4 @@ node_modules
 *.local
 
 /config/credentials/*.key
+/config/saml/*.cer

@@ -66,3 +66,4 @@ end
 gem "vite_rails"
 gem "devise"
 gem "devise_saml_authenticatable", github: "apokalipto/devise_saml_authenticatable"
+gem "pundit"

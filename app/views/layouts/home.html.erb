@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Layout</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= vite_client_tag %>
+    <%= vite_javascript_tag 'application.tsx' %>
+  </head>
+
+  <body>
+    <h1>home</h1> 
+    <div id="root" />
+    <%= yield %>
+  </body>
+</html>
